@@ -1,46 +1,96 @@
-<!DOCTYPE html>
-<!--
-    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
-
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="STYLES.css">
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-tap-highlight" content="no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
-        <script type="text/javascript" src="cordova.js"></script>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"
+</head>
+
+<body>
+<div class="container">
+<div class="row">
+<div class="col-md-3 col-md-offset-5">
+<select class="form-control">
+  <option>Plage</option>
+  <option>Stanley</option>
+  <option>Sai Kung</option>
+  <option>Paris Plage</option>
+  
+</select>
+</div> 
+<br>
+<br>
+<div class="row">
+<div class="col-md-3 col-md-offset-5">
+<select class="form-control">
+  <option>Equipe</option>
+  <option>SO FRENCH DRAGON BOAT TEAM</option>
+  <option>PSG</option>
+  <option>hello</option>
+ 
+</select>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="row">
+ <div class="col-md-5 col-md-offset-5">
+	<FORM NAME="Calc">
+
+	   <div class="input-group">
+		  
+		  <input TYPE="text" class="form-control"  placeholder="poids" style="display: inline ; width:400px; height:100px">
+		  <div class="input-group-addon">kg</div>
+		</div>
+		
+		
+
+
+	 <br> <br>
+	<INPUT TYPE="button" class="btn btn-info" NAME="one" VALUE=" 1 " OnClick="Calc.Input.value += '1'"  style="width: 100px;height: 100px">
+	<INPUT TYPE="button" class="btn btn-info" NAME="two" VALUE=" 2 " OnCLick="Calc.Input.value  +='2'"style="width: 100px;height: 100px">
+	<INPUT TYPE="button" class="btn btn-info" NAME="three" VALUE=" 3 " OnClick="Calc.Input.value  +='3'"style="width: 100px;height: 100px">
+	<br>
+	<br>
+	<INPUT TYPE="button" class="btn btn-info" NAME="four" VALUE=" 4 " OnClick="Calc.Input.value  +='4'"style="width: 100px;height: 100px">
+	<INPUT TYPE="button" class="btn btn-info" NAME="five" VALUE=" 5 " OnCLick="Calc.Input.value += '5'"style="width: 100px;height: 100px">
+	<INPUT TYPE="button"  class="btn btn-info" NAME="six" VALUE=" 6 " OnClick="Calc.Input.value +=  '6'"style="width: 100px;height: 100px">
+	<br>
+	<br>
+	<INPUT TYPE="button" class="btn btn-info" NAME="seven" VALUE=" 7 " OnClick="Calc.Input.value += '7'"style="width: 100px;height: 100px">
+	<INPUT TYPE="button" class="btn btn-info" NAME="eight" VALUE=" 8 " OnCLick="Calc.Input.value += '8'"style="width: 100px;height: 100px">
+	<INPUT TYPE="button" class="btn btn-info" NAME="nine" VALUE=" 9 " OnClick="Calc.Input.value  +='9'"style="width: 100px;height: 100px">
+	<br>
+	<br>
+	<INPUT TYPE="button" class="btn btn-info" NAME="clear" VALUE=" c " OnClick="Calc.Input.value = ''"style="width: 100px;height: 100px">
+	<INPUT TYPE="button" class="btn btn-info" NAME="zero" VALUE=" 0 " OnClick="Calc.Input.value += '0'"style="width: 100px;height: 100px">
+	<INPUT TYPE="button" class="btn btn-info" NAME="coma" VALUE=" , " OnClick="Calc.Input.value +=', '"style="width: 100px;height: 100px">
+	<br></TD></TR></TABLE></FORM>
+	<br>
+	<br>
+	</div>
+</div>
+<div class="row">
+<div class="col-md-8 col-md-offset-5">
+<button type="button" class="btn btn-danger btn-lg" style="width: 310px;height: 100px">
+  <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Valider
+</button>
+</div>
+ <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
         </script>
-    </body>
+</body>
 </html>
